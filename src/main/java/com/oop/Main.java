@@ -16,10 +16,10 @@ public class Main {
         Employee contrator = new Contrator("Nazneen", 10, 9);
         Employee contratorBubu = new Contrator("Bubu", 899, 999);
         Employee permanentEmployee = new PermanentEmployee("Nazneen", 50);
-        System.out.println("main.java.com.oop.model.Contrator's Salary: " +contrator.calculateSalary());
-        System.out.println(contrator.getName());
-        System.out.println(contratorBubu.calculateSalary());
-        System.out.println(permanentEmployee.calculateSalary());
+        System.out.println("Contrator's Salary: " +contrator.calculateSalary());
+        System.out.println("Contrator's Name: " +contrator.getName());
+        System.out.println("ContratorBubu's Salary: " +contratorBubu.calculateSalary());
+        System.out.println("Permanent Employee's Salary: " +permanentEmployee.calculateSalary());
     }
 
 }
