@@ -1,5 +1,6 @@
 package main.java.com.oop.model;
 
+//Encapsulation
 public class Person {
     private String name;
     private double id;

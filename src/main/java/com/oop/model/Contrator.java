@@ -1,5 +1,6 @@
 package main.java.com.oop.model;
 
+//Abstraction
 public class Contrator extends Employee {
 
     private int workingHours;

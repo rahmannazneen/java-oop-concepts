@@ -1,5 +1,6 @@
 package main.java.com.oop.model;
 
+//Abstraction
 public abstract class Employee {
 
     private String name;

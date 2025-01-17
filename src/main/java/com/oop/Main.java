@@ -6,6 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         //Object
+
         Student student = new Student("kareem", "ABC");
 //        System.out.println(student.getName());
 //        System.out.println(student.getCollege());
@@ -22,8 +23,14 @@ public class Main {
 
         //Encapsulation
         Person person = new Person();
-        person.setName("Nazneen Rahman");;
+        person.setName("Nazneen Rahman");
+        ;
         System.out.println("Person 1 - " + person.getId() + " : " + person.getName());
+
+        //Inheritance
+        Programmer p = new Programmer("Nazneen", "FinTech Unit", 20, 88);
+        p.displayStudentDetail();
+
     }
 
 }
