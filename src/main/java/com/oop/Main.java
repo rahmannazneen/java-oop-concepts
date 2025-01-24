@@ -1,6 +1,6 @@
 package main.java.com.oop;
-
 import main.java.com.oop.model.*;
+
 
 public class Main {
 
@@ -24,10 +24,9 @@ public class Main {
         //Encapsulation
         Person person = new Person();
         person.setName("Nazneen Rahman");
-        ;
-        System.out.println("Person 1 - " + person.getId() + " : " + person.getName());
 
-        //Inheritance
+//        System.out.println("Person 1 - " + person.getId() + " : " + person.getName());
+//        //Inheritance
         Programmer p = new Programmer("Nazneen", "FinTech Unit", 20, 88);
         p.displayStudentDetail();
 
