@@ -10,32 +10,45 @@ import static main.java.com.oop.project.Calculator.*;
 public class Main {
 
     public static void main(String[] args) {
-        //Object
 
-        Student student = new Student("kareem", "ABC");
-//        System.out.println(student.getName());
-//        System.out.println(student.getCollege());
-        student.setName("bareem");
+        //Object
+        System.out.println("The data has been fetched by creating Object.");
+        Student student = new Student("Kareem Rahman", "ABC College");
+        System.out.println("Name: " + student.getName());
+        System.out.println("College: " + student.getCollege());
+
+        System.out.println("---------------------------------");
+
+
         //Abstraction
 
         Employee contrator = new Contrator("Nazneen", 10, 9);
         Employee contratorBubu = new Contrator("Bubu", 899, 999);
         Employee permanentEmployee = new PermanentEmployee("Nazneen", 50);
-//        System.out.println("Contrator's Salary: " +contrator.calculateSalary());
-//        System.out.println("Contrator's Name: " +contrator.getName());
-//        System.out.println("ContratorBubu's Salary: " +contratorBubu.calculateSalary());
-//        System.out.println("Permanent Employee's Salary: " +permanentEmployee.calculateSalary());
+        System.out.println("The Abstraction feature has been implemented.");
+        System.out.println("Contrator's Salary: " + contrator.calculateSalary());
+        System.out.println("Contrator's Name: " + contrator.getName());
+        System.out.println("ContratorBubu's Salary: " + contratorBubu.calculateSalary());
+        System.out.println("Permanent Employee's Salary: " + permanentEmployee.calculateSalary());
+        System.out.println("---------------------------------");
 
         //Encapsulation
+
         Person person = new Person();
+        System.out.println("The Encapsulation feature has been implemented.");
         person.setName("Nazneen Rahman");
+        System.out.println("Person 1 - " + person.getId() + " : " + person.getName());
+        System.out.println("---------------------------------");
 
-//        System.out.println("Person 1 - " + person.getId() + " : " + person.getName());
-//        //Inheritance
-//        Programmer p = new Programmer("Nazneen", "FinTech Unit", 20, 88);
-//        p.displayStudentDetail();
 
-        //        Implemented the calculator project
+        //Inheritance
+        Programmer p = new Programmer("Nazneen", "FinTech Unit", 20, 88);
+        System.out.println("The Inheritance feature has been implemented.");
+        p.displayStudentDetail();
+        System.out.println("---------------------------------");
+
+        //Implemented the calculator project
+        System.out.println("The calculator project has been implemented.");
         Scanner scanner = new Scanner(System.in);
         // Step 2: Display menu to the user
         System.out.println("Welcome to the java concept! ");
@@ -70,6 +83,22 @@ public class Main {
             System.out.println("Invalid Choice, Please Try Again");
         }
         scanner.close();
+        //problem solve of the digit count
+        System.out.println(sum("123"));
+        System.out.println(sum("123abc"));
+        System.out.println(sum("456"));
+        System.out.println(sum("4a5b6c"));
     }
 
+    private static int sum(String s) {
+        int sum = 0;
+        for (char c : s.toCharArray()) {
+            if (!Character.isDigit(c)) {
+                return 0;
+            } else {
+                sum += c - '0';
+            }
+        }
+        return sum;
+    }
 }
