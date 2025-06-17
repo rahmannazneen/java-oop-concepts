@@ -11,7 +11,7 @@ public class Person {
     }
 
     private void sayHello() {
-        System.out.println("Hello " + getId());
+//        System.out.println("Hello " + getId());
     }
 
     public String getName() {
