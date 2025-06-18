@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 
-public class Main {
+public class RemoveDuplicatesAndSort {
 
     public static void main(String[] args) {
 
